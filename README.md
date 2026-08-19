@@ -28,8 +28,6 @@ different rooms.
 
 ```mermaid
 erDiagram
-    ...
-```
     COURSE ||--|{ SECTION : "HAS"
     SECTION ||--|{ ENROLLMENT : "HAS"
     STUDENT ||--|{ ENROLLMENT : "ENROLLS IN"
@@ -61,7 +59,8 @@ erDiagram
     CLASSROOM {
         string RoomNo PK
         string Building
-    }
+    }```
+
 
 # Question 2 — Hospital Prescription System
 Issue 1: Binary relationships used for Prescription tracking
