@@ -27,11 +27,11 @@ different rooms.
 3. Minimal ER Correction: Re-anchor HELD_IN relationship to connect Classroom to Section.
 
 erDiagram
-    COURSE ||--|{ SECTION : HAS
-    SECTION ||--|{ ENROLLMENT : HAS
-    STUDENT ||--|{ ENROLLMENT : ENROLLS_IN
-    INSTRUCTOR ||--o{ SECTION : TEACHES
-    CLASSROOM ||--o{ SECTION : HOSTS
+    COURSE ||--|{ SECTION : "HAS"
+    SECTION ||--|{ ENROLLMENT : "HAS"
+    STUDENT ||--|{ ENROLLMENT : "ENROLLS IN"
+    INSTRUCTOR ||--o{ SECTION : "TEACHES"
+    CLASSROOM ||--o{ SECTION : "HOSTS"
 
     COURSE {
         string CourseID PK
